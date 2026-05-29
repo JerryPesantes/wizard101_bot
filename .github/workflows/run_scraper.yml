@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+env:
+  # Opt into Node.js 24 runtime to instantly clear the GitHub runner warning
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   scrape_and_notify:
     runs-on: ubuntu-latest
